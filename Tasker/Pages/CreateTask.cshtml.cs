@@ -28,7 +28,10 @@ namespace Tasker.Pages
 
         public IActionResult OnPost()
         {
-            if (!ModelState.IsValid) return Page();
+            if (!ModelState.IsValid)
+            {
+                return Page();
+            }
 
             _context.Tasks.Add(NewTask);
 
