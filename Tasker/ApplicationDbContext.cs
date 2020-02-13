@@ -9,5 +9,7 @@ namespace Tasker
         {
 
         }
+
+        public DbSet<Task> Tasks { get; set; }
     }
 }
